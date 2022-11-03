@@ -158,10 +158,11 @@ public class Main {
         //2054
         System.out.println("                     ДОМАШНЕЕ ЗАДАНИЕ - 3");
         System.out.println("Решение задачи 3.1");
-        int year;
+        int year = 0;
         int startYear = 2022 - 200;
         int stopYear = 2022 + 100;
-        for (year = 0; year < startYear; year = year + 79){
+        while (year < startYear){
+            year = year + 79;
         }
         System.out.println(year);
         do {
@@ -169,7 +170,6 @@ public class Main {
             System.out.println(year);
         }
         while (year < 2022);
-
         System.out.println(" ");
 
         // Домашнее задание - 3.2
@@ -190,7 +190,7 @@ public class Main {
         int too = 2;
         int n = 1;
         int result = too * n;
-        for (n = 1; n < 11; result = too * n){
+        for (; n < 11; result = too * n){
             System.out.println( too + " * " + n + " = " + result);
             n ++;
         }
