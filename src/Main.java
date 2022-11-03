@@ -13,8 +13,8 @@ public class Main {
         int total = 0;
         int i = 0;
         while (total < 2_459_000) {
-            total = total + total / 100;
             total = total + deposit;
+            total = total + total / 100;
             i++;
             System.out.println("Месяц " + i + ", сумма накоплений = " + total + " рублей");
         }
